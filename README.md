@@ -1,2 +1,2 @@
 # asm-space-invaders
-Space Invaders Clone in ASM
+Space Invaders clone in x86 Assembly
