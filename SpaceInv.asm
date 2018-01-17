@@ -133,20 +133,20 @@ DIN:    CLD
 
 ;PINTAR FONDO
 FONDO:  MOV  AL, 11
-	    MOV  CX, 0
-	    MOV  DX, 0
-	    MOV  AH, 0CH
+        MOV  CX, 0
+        MOV  DX, 0
+        MOV  AH, 0CH
 CICLO:  INT  10H
-	    INC  CX
-	    CMP  CX, 32000
-	    JE   SALIDA
-	    JMP  CICLO	
+        INC  CX
+        CMP  CX, 32000
+        JE   SALIDA
+        JMP  CICLO	
 SALIDA: MOV  AL, 10
 CICLO2: INT  10H
         INC  CX
-	    CMP  CX, 64000
-	    JE   SAL2
-	    JMP  CICLO2
+        CMP  CX, 64000
+        JE   SAL2
+        JMP  CICLO2
 SAL2:   RET
         
 ;RETARDO        
